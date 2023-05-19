@@ -2,6 +2,9 @@ package com.example.promptmeai;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterScreen extends AppCompatActivity{

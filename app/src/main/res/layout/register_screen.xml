@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background">
+    android:background="@drawable/gradient_background"
+    android:visibility="visible">
 
+    <!--Email-->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/emailInput"
         android:layout_width="340dp"
         android:layout_height="64dp"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="523dp"
+        android:background="@drawable/textinput_background"
+        app:boxBackgroundMode="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -23,21 +27,151 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="hint" />
+            android:layout_height="35dp"
+            android:hint="Enter Email" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/emailText"
+        android:layout_width="215dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailInput"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--Username -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameInput"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="523dp"
+        android:background="@drawable/textinput_background"
+        app:boxBackgroundMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter Username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Password -->
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="215dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameInput"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordInput"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="523dp"
+        android:background="@drawable/textinput_background"
+        app:boxBackgroundMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Enter Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!--Re-Enter Password-->
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="215dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordInput"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reEnterPasswordInput"
+        android:layout_width="340dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="523dp"
+        android:background="@drawable/textinput_background"
+        app:boxBackgroundMode="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Re-Enter Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/reEnterPasswordText"
         android:layout_width="215dp"
         android:layout_height="23dp"
         android:layout_marginEnd="164dp"
         android:layout_marginBottom="7dp"
         android:fontFamily="@font/aclonica"
-        android:text="Username"
+        android:text="Re-Enter Password"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintBottom_toTopOf="@+id/reEnterPasswordInput"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="165dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="61dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reEnterPasswordInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
