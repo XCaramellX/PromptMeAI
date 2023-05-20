@@ -7,28 +7,25 @@
     android:background="@drawable/gradient_background">
 
     <!--Email-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailInput"
         android:layout_width="340dp"
         android:layout_height="64dp"
         android:layout_marginBottom="527dp"
         android:background="@drawable/textinput_background"
+        android:textColorHint="#000000"
+        app:boxBackgroundColor="#FFFFFF"
         app:boxBackgroundMode="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:hint="Enter Email"
-            android:textColor="#000000"
-            android:textColorHighlight="#000000"
-            android:textColorHint="#000000"
-            android:textColorLink="#000000" />
+        app:layout_constraintVertical_bias="1.0"
+        app:placeholderTextColor="#000000"
+        app:prefixTextColor="#000000"
+        app:suffixTextColor="#000000">
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,8 +42,28 @@
         app:layout_constraintBottom_toTopOf="@+id/emailInput"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!--Password-->
 
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="272dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="sans-serif"
+        android:hint="Enter Email"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/emailInput"
+        app:layout_constraintEnd_toEndOf="@+id/emailInput"
+        app:layout_constraintStart_toStartOf="@+id/emailInput"
+        app:layout_constraintTop_toTopOf="@+id/emailInput" />
+
+    <!--Password-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordInput"
@@ -65,11 +82,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.25">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:hint="Enter Password"
-            android:textColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -86,6 +98,20 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Enter Password"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordInput"
+        app:layout_constraintEnd_toEndOf="@+id/passwordInput"
+        app:layout_constraintStart_toStartOf="@+id/passwordInput"
+        app:layout_constraintTop_toTopOf="@+id/passwordInput" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="165dp"
@@ -95,8 +121,7 @@
         android:fontFamily="@font/aclonica"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
