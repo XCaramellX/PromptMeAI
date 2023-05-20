@@ -28,7 +28,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:hint="Enter Email" />
+            android:hint="Enter Email"
+            android:textColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -67,10 +68,11 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:hint="Enter Username" />
+            android:hint="Enter Username"
+            android:textColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--Password -->
+
 
     <TextView
         android:id="@+id/usernameText"
@@ -84,6 +86,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/usernameInput"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--Password -->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordInput"
@@ -105,11 +109,12 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:hint="Enter Password" />
+            android:hint="Enter Password"
+            android:textColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <!--Re-Enter Password-->
+
 
     <TextView
         android:id="@+id/passwordText"
@@ -123,6 +128,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/passwordInput"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--Re-Enter Password-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/reEnterPasswordInput"
@@ -144,7 +151,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:hint="Re-Enter Password" />
+            android:hint="Re-Enter Password"
+            android:textColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
