@@ -14,6 +14,7 @@ public class RegisterScreen extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register_screen);
 
-
+        EditText emailInput = findViewById(R.id.emailTextInput);
+        
     }
 }
