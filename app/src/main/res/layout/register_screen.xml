@@ -197,7 +197,7 @@
         app:layout_constraintTop_toTopOf="@+id/reEnterPasswordInput" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/registerUser"
         android:layout_width="165dp"
         android:layout_height="52dp"
         android:layout_marginTop="45dp"
