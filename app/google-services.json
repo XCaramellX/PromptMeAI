@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "196441156044",
+    "project_id": "promptmeai",
+    "storage_bucket": "promptmeai.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196441156044:android:1a6a926776840a1375d569",
+        "android_client_info": {
+          "package_name": "com.example.promptmeai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196441156044-9svesnafk7rvfs4bmiep8ftog9ce3vdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBexvDQVzK-xFKlKNQsIZ6wUL8IwB7xU80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196441156044-9svesnafk7rvfs4bmiep8ftog9ce3vdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
