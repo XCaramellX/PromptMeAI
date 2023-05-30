@@ -45,7 +45,8 @@ public class LoginScreen extends AppCompatActivity{
 
         login = findViewById(R.id.login);
 
-        login.setOnClickListener(new View.OnClickListener() { // make the login button click, validate, and login
+        login.setOnClickListener(new View.OnClickListener() {
+            // make the login button click, validate, and login
             @Override
             public void onClick(View view) {
              String email, password;
