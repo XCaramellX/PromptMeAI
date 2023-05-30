@@ -54,9 +54,10 @@ public class LoginScreen extends AppCompatActivity{
              email = emailLoginTextInput.getText().toString();
              password = passwordLoginTextInput.getText().toString();
 
-             inputValidation();
+             if(inputValidation()) {
 
-             existingUser(email, password);
+                 existingUser(email, password);
+             }
             }
         });
 
